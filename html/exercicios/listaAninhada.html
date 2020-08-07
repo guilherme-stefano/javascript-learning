@@ -1,0 +1,54 @@
+<h1>Projeto</h1>
+<ul class="tree">
+    <li>
+        <div class="eventoPasta">backend</div>
+        <ul>
+            <li>
+                <div class="eventoPasta">app</div>
+                <ul>
+                    <li>produto.js</li>
+                    <li>usuario.js</li>
+                    <li>vemda.js</li>
+                </ul>
+            </li>
+            <li>
+                <div class="eventoPasta">config</div>
+                <ul>
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                    <li>servidor.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <div class="eventoPasta"> frontend </div>
+        <ul>
+            <li>
+                <div class="eventoPasta"> public</div>
+                <ul>
+                    <li>app.css</li>
+                    <li>app.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<script>
+       document.querySelectorAll('.eventoPasta').forEach(ul =>{
+            ul.onclick = function(e){
+              
+                const element = e.target.nextSibling.nextSibling; 
+                if(element.style.display){
+                    element.style.display = '';
+                } else{
+                    element.style.display = 'none';
+                }
+               
+                
+             }
+         })
+</script>
