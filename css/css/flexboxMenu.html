@@ -28,6 +28,8 @@
             margin: 0;
             padding: 0;
         }
+
+       
         
         .cabecalho a {
             text-decoration: none;
@@ -54,11 +56,30 @@
         /* ==================== */
         /* Solução com Flex Box */
         /* ==================== */
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .flex-container nav{
+            flex-grow: 10;
+        }
+
+        .menu ul{
+            display:flex;
+        }
+
+        .menu li {
+            margin: 0px 10px;
+        }
     </style>
 </head>
 
 <body>
-    <header class="cabecalho">
+    <header class="flex-container cabecalho">
         <div class="logo">
             <a href="#inicio">
                 <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo" />
